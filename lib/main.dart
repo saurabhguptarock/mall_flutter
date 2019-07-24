@@ -104,8 +104,8 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           Positioned(
             top: MediaQuery.of(context).size.height * .15,
-            left: MediaQuery.of(context).size.width * .1,
-            right: MediaQuery.of(context).size.width * .1,
+            left: MediaQuery.of(context).size.width * .07,
+            right: MediaQuery.of(context).size.width * .07,
             child: Card(
               elevation: 20,
               shape: RoundedRectangleBorder(
@@ -377,6 +377,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                     ),
                     SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
                       padding: EdgeInsets.all(10),
                       child: Row(
                         children: <Widget>[
@@ -437,9 +438,12 @@ class _MyHomePageState extends State<MyHomePage> {
                                         EdgeInsets.only(left: 10, right: 10),
                                     child: Column(
                                       crossAxisAlignment:
-                                          CrossAxisAlignment.start,
+                                          CrossAxisAlignment.center,
                                       children: <Widget>[
-                                        // Image.asset('name'),
+                                        Image.asset(
+                                          'img/beef.png',
+                                          height: 110,
+                                        ),
                                         FittedBox(
                                           child: Text(
                                             'Natnudo Beef',
@@ -476,6 +480,442 @@ class _MyHomePageState extends State<MyHomePage> {
                                             ),
                                           ],
                                         )
+                                      ],
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.only(right: 10),
+                          ),
+                          Card(
+                            elevation: 0,
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.only(
+                                    topLeft: Radius.circular(10),
+                                    bottomRight: Radius.circular(10),
+                                    bottomLeft: Radius.circular(40),
+                                    topRight: Radius.circular(40))),
+                            child: Container(
+                              height: 180,
+                              width: 140,
+                              decoration: BoxDecoration(
+                                  gradient: LinearGradient(
+                                    begin: Alignment.topCenter,
+                                    end: Alignment.bottomCenter,
+                                    colors: [
+                                      Color.fromRGBO(177, 214, 232, 1),
+                                      Color.fromRGBO(122, 161, 185, 1),
+                                    ],
+                                  ),
+                                  borderRadius: BorderRadius.only(
+                                      topLeft: Radius.circular(10),
+                                      bottomRight: Radius.circular(10),
+                                      bottomLeft: Radius.circular(40),
+                                      topRight: Radius.circular(40))),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: <Widget>[
+                                  Container(
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.only(
+                                        topLeft: Radius.circular(10),
+                                        bottomRight: Radius.circular(10),
+                                      ),
+                                      color: Color.fromRGBO(254, 187, 39, 1),
+                                    ),
+                                    height: 20,
+                                    width: 50,
+                                    child: Padding(
+                                      padding: EdgeInsets.all(3),
+                                      child: FittedBox(
+                                        child: Text(
+                                          'Parcels',
+                                          textAlign: TextAlign.center,
+                                          style: TextStyle(
+                                              color: Colors.white,
+                                              fontSize: 10,
+                                              fontWeight: FontWeight.bold),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding:
+                                        EdgeInsets.only(left: 10, right: 10),
+                                    child: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.center,
+                                      children: <Widget>[
+                                        Image.asset(
+                                          'img/shrimp.png',
+                                          height: 110,
+                                        ),
+                                        FittedBox(
+                                          child: Text(
+                                            'Krewetkl Shrimps',
+                                            style: TextStyle(
+                                                color: Colors.white,
+                                                fontSize: 13,
+                                                fontWeight: FontWeight.bold,
+                                                fontStyle: FontStyle.italic),
+                                          ),
+                                        ),
+                                        Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.spaceBetween,
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.center,
+                                          children: <Widget>[
+                                            FittedBox(
+                                              child: Text(
+                                                '€ 9.9/package',
+                                                style: TextStyle(
+                                                    color: Colors.white,
+                                                    fontSize: 10,
+                                                    fontWeight: FontWeight.bold,
+                                                    fontStyle:
+                                                        FontStyle.italic),
+                                              ),
+                                            ),
+                                            FittedBox(
+                                              child: Icon(
+                                                Icons.favorite_border,
+                                                color: Colors.white,
+                                                size: 16,
+                                              ),
+                                            ),
+                                          ],
+                                        )
+                                      ],
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.only(right: 10),
+                          ),
+                          Card(
+                            elevation: 0,
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.only(
+                                    topLeft: Radius.circular(10),
+                                    bottomRight: Radius.circular(10),
+                                    bottomLeft: Radius.circular(40),
+                                    topRight: Radius.circular(40))),
+                            child: Container(
+                              height: 180,
+                              width: 140,
+                              decoration: BoxDecoration(
+                                  gradient: LinearGradient(
+                                    begin: Alignment.topCenter,
+                                    end: Alignment.bottomCenter,
+                                    colors: [
+                                      Color.fromRGBO(177, 214, 232, 1),
+                                      Color.fromRGBO(122, 161, 185, 1),
+                                    ],
+                                  ),
+                                  borderRadius: BorderRadius.only(
+                                      topLeft: Radius.circular(10),
+                                      bottomRight: Radius.circular(10),
+                                      bottomLeft: Radius.circular(40),
+                                      topRight: Radius.circular(40))),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: <Widget>[
+                                  Container(
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.only(
+                                        topLeft: Radius.circular(10),
+                                        bottomRight: Radius.circular(10),
+                                      ),
+                                      color: Color.fromRGBO(254, 187, 39, 1),
+                                    ),
+                                    height: 20,
+                                    width: 50,
+                                    child: Padding(
+                                      padding: EdgeInsets.all(3),
+                                      child: FittedBox(
+                                        child: Text(
+                                          'Parcels',
+                                          textAlign: TextAlign.center,
+                                          style: TextStyle(
+                                              color: Colors.white,
+                                              fontSize: 10,
+                                              fontWeight: FontWeight.bold),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding:
+                                        EdgeInsets.only(left: 10, right: 10),
+                                    child: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.center,
+                                      children: <Widget>[
+                                        Image.asset(
+                                          'img/coffe.png',
+                                          height: 110,
+                                        ),
+                                        FittedBox(
+                                          child: Text(
+                                            'Movenpick',
+                                            style: TextStyle(
+                                                color: Colors.white,
+                                                fontSize: 13,
+                                                fontWeight: FontWeight.bold,
+                                                fontStyle: FontStyle.italic),
+                                          ),
+                                        ),
+                                        Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.spaceBetween,
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.center,
+                                          children: <Widget>[
+                                            FittedBox(
+                                              child: Text(
+                                                '€ 15.9/catty',
+                                                style: TextStyle(
+                                                    color: Colors.white,
+                                                    fontSize: 10,
+                                                    fontWeight: FontWeight.bold,
+                                                    fontStyle:
+                                                        FontStyle.italic),
+                                              ),
+                                            ),
+                                            FittedBox(
+                                              child: Icon(
+                                                Icons.favorite_border,
+                                                color: Colors.white,
+                                                size: 16,
+                                              ),
+                                            ),
+                                          ],
+                                        )
+                                      ],
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(left: 20, right: 20),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: <Widget>[
+                          Text(
+                            'Weekly Bursts',
+                            style: TextStyle(
+                                fontSize: 18, fontWeight: FontWeight.bold),
+                          ),
+                          Text(
+                            'View all',
+                            style: TextStyle(
+                                color: Color.fromRGBO(254, 195, 42, 1)),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(left: 20, right: 20, top: 10),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: <Widget>[
+                          Card(
+                            elevation: 10,
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.only(
+                                    topLeft: Radius.circular(10),
+                                    bottomRight: Radius.circular(10),
+                                    bottomLeft: Radius.circular(20),
+                                    topRight: Radius.circular(20))),
+                            child: Container(
+                              height: 180,
+                              width: 100,
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.only(
+                                      topLeft: Radius.circular(10),
+                                      bottomRight: Radius.circular(10),
+                                      bottomLeft: Radius.circular(20),
+                                      topRight: Radius.circular(20))),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: <Widget>[
+                                  Padding(
+                                    padding: EdgeInsets.only(
+                                        left: 10, right: 10, top: 10),
+                                    child: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.center,
+                                      children: <Widget>[
+                                        FittedBox(
+                                          child: Text(
+                                            'Gala',
+                                            style: TextStyle(
+                                                color: Colors.black,
+                                                fontSize: 16,
+                                                fontWeight: FontWeight.bold,
+                                                fontStyle: FontStyle.italic),
+                                          ),
+                                        ),
+                                        FittedBox(
+                                          child: Text(
+                                            '€ 16.9/catty',
+                                            style: TextStyle(
+                                              color: Color.fromRGBO(
+                                                  246, 182, 50, 1),
+                                              fontSize: 11,
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: EdgeInsets.only(top: 30),
+                                        ),
+                                        Image.asset(
+                                          'img/beef.png',
+                                          height: 100,
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.only(right: 10),
+                          ),
+                          Card(
+                            elevation: 10,
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.only(
+                                    topLeft: Radius.circular(10),
+                                    bottomRight: Radius.circular(10),
+                                    bottomLeft: Radius.circular(20),
+                                    topRight: Radius.circular(20))),
+                            child: Container(
+                              height: 180,
+                              width: 100,
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.only(
+                                      topLeft: Radius.circular(10),
+                                      bottomRight: Radius.circular(10),
+                                      bottomLeft: Radius.circular(20),
+                                      topRight: Radius.circular(20))),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: <Widget>[
+                                  Padding(
+                                    padding: EdgeInsets.only(
+                                        left: 10, right: 10, top: 10),
+                                    child: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.center,
+                                      children: <Widget>[
+                                        FittedBox(
+                                          child: Text(
+                                            'Cherry',
+                                            style: TextStyle(
+                                                color: Colors.black,
+                                                fontSize: 16,
+                                                fontWeight: FontWeight.bold,
+                                                fontStyle: FontStyle.italic),
+                                          ),
+                                        ),
+                                        FittedBox(
+                                          child: Text(
+                                            '€ 30.9/catty',
+                                            style: TextStyle(
+                                              color: Color.fromRGBO(
+                                                  246, 182, 50, 1),
+                                              fontSize: 11,
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: EdgeInsets.only(top: 30),
+                                        ),
+                                        Image.asset(
+                                          'img/coffe.png',
+                                          height: 100,
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.only(right: 10),
+                          ),
+                          Card(
+                            elevation: 10,
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.only(
+                                    topLeft: Radius.circular(10),
+                                    bottomRight: Radius.circular(10),
+                                    bottomLeft: Radius.circular(20),
+                                    topRight: Radius.circular(20))),
+                            child: Container(
+                              height: 180,
+                              width: 100,
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.only(
+                                      topLeft: Radius.circular(10),
+                                      bottomRight: Radius.circular(10),
+                                      bottomLeft: Radius.circular(20),
+                                      topRight: Radius.circular(20))),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: <Widget>[
+                                  Padding(
+                                    padding: EdgeInsets.only(
+                                        left: 10, right: 10, top: 10),
+                                    child: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.center,
+                                      children: <Widget>[
+                                        FittedBox(
+                                          child: Text(
+                                            'Tomato',
+                                            style: TextStyle(
+                                                color: Colors.black,
+                                                fontSize: 16,
+                                                fontWeight: FontWeight.bold,
+                                                fontStyle: FontStyle.italic),
+                                          ),
+                                        ),
+                                        FittedBox(
+                                          child: Text(
+                                            '€ 16.9/catty',
+                                            style: TextStyle(
+                                              color: Color.fromRGBO(
+                                                  246, 182, 50, 1),
+                                              fontSize: 11,
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: EdgeInsets.only(top: 30),
+                                        ),
+                                        Image.asset(
+                                          'img/shrimp.png',
+                                          height: 100,
+                                        ),
                                       ],
                                     ),
                                   ),
